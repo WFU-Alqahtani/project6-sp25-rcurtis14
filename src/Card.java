@@ -28,4 +28,14 @@ public class Card {
         System.out.print(suit + ": " + rank);
     }
 
+    // Compare the rank of two cards
+    public int compareRank(Card other) {
+        return this.rank.ordinal() - other.rank.ordinal();
+    }
+
+    // Compare the suit of two cards
+    public int compareSuit(Card other) {
+        return this.suit.ordinal() - other.suit.ordinal();
+    }
+
 }
